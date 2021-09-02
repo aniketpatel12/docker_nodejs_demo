@@ -12,6 +12,12 @@ app.get('/status', (req, res)=>{
     res.send('Okay')
 })
 
+app.get('/hello',(req, res)=>{
+    res.status(200)
+    res.send('Hi, there!')
+
+})
+
 app.listen(port, ()=>{
     console.log(`Example app listening on http://localhost:${port}`);
 })
